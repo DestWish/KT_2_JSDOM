@@ -4,12 +4,13 @@ function createCard(cat) {
 
 
     card.innerHTML = `
-        <img src="${cat.img_link}" alt="${cat.name}" class="cat-image">
+        
         <div class="cat-info">
             <h2 class="cat-name">
                 ${cat.name}
                 ${cat.favourite ? '<3' : ''}
             </h2>
+            <img src="${cat.img_link}" alt="${cat.name}" class="cat-image">
             <p class="cat-age">Возраст: ${cat.age} ${getAgeWord(cat.age)}</p>
             <p class="cat-rate">Рейтинг: ${cat.rate}/10</p>
             <p class="cat-description">${cat.description}</p>
